@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;900&family=IBM+Plex+Sans:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;900&family=IBM+Plex+Sans:ital@1&family=Ysabeau:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cinzel:wght@500;600;900&family=IBM+Plex+Sans:ital@1&family=Ysabeau:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cinzel:wght@500;600;900&family=IBM+Plex+Sans:ital@1&family=Purple+Purse&family=Ysabeau:wght@300&display=swap" rel="stylesheet">
+  <title>Hospital Website</title>
+  <style>
+    /* General Styles */
+    *
+    {
+        text-align: center;
+    }
+    .home1 {
+        /*background-image: url("https://media.licdn.com/dms/image/C5612AQHhvBAZjanbsg/article-cover_image-shrink_600_2000/0/1633674492707?e=2147483647&v=beta&t=p7r8zSfIqOD6yAuN5JwgGjXh9xZL45NCtNhDk05KoKs");*/
+        background-size: 1800px; 
+        background-repeat: no-repeat;
+        background-position: center; /* Center the background image */
+        background-color: rgba(0, 0, 0, 0.076);
+        color: white; /* Set the text color to white for better visibility */
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+
+    .navbar li a {
+        color: white; /* Set the font color to white for navigation links */
+        font-weight: bold;
+        font-family: 'IBM Plex Sans', sans-serif;
+      }
+
+    h1
+    {
+        margin: 0;
+        font-family: 'Purple Purse', cursive;
+    }
+    h2, h3 {
+      margin: 0;
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    p
+    {
+        font-family: 'Ysabeau', sans-serif;
+        font-size: 20px;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    
+
+    /* Navigation Menu */
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(26, 26, 119);
+      padding: 10px;
+      
+    }
+    
+    .p_first
+    {
+        font-size:larger;
+        font-weight: bold;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    /* Home Page */
+    #home {
+      background-color: #0a6c7b;
+      padding: 40px;
+    }
+
+    /* About Us */
+    #about {
+      padding: 40px;
+      
+    }
+
+    /* Departments */
+    #departments {
+      padding: 40px;
+    }
+
+    /* Services */
+    #services {
+      padding: 40px;
+    }
+
+    /* Doctors and Staff */
+    #doctors {
+      padding: 40px;
+    }
+
+    /* Patient Information and Support */
+    #patient-info {
+      padding: 40px;
+    }
+
+    /* Contact Us */
+    #contact {
+      padding: 40px;
+    }
+
+    /* Form Styling */
+    input {
+        box-sizing: border-box;
+        display: block;
+        border-radius: 24px;
+        border: 1px solid rgb(223, 225, 229);
+        height: 44px;
+        margin: 0 auto 29px;
+        max-width: 564px;
+        width: 90%;
+        padding-left: 30px;
+        font-size: 16px;
+    }
+    
+    button {
+        box-sizing: border-box;
+        margin-top: 0;
+        padding: 0 16px;
+        font-size: 14px;
+        height: 36px;
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        cursor: pointer;
+    }
+
+    .second_1
+    {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .aboutus
+    {
+        background-color: #219eb1;
+    }
+    #h11
+    {
+        font-family: 'Cinzel', serif;
+        font-size: 70px;
+    }
+    /* For background color*/
+    #temp123
+    {
+        background-color: rgb(130, 167, 195);
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      
+      form input[type="text"], form button {
+        margin-top: 10px;
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body id = "temp123">
+  <!-- Navigation Menu -->
+  <nav class = "navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#departments">Departments</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#doctors">Doctors and Staff</a></li>
+      <li><a href="#patient-info">Patient Information and Support</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Page -->
+  <section id="home" class = "home1">
+    <h1 id = "h11">PHN Hospital welcomes you....</h1>
+    <p> We do provide an exceptional and advanced treatment to the people whole heartedly.</p>
+    <p><b >MISSION:</b>&nbsp;To serve with a patient's first motto and to do work towards a patient centred area.</p>
+    <p> <b>VISION:</b>&nbsp;Our vision is to be the unmatched leader in improving quality and reducing cost of healthcare.</p>
+    <p><b>VALUES: </b>&nbsp;The patients always comes first. We are dedicated to patients care.</p>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h1 >ABOUT US</h1>
+    <p>The world's first and largest Artificial Pulmonary Valve was implanted without surgery by a team of our doctors.</p>
+    <br>
+    <h1>SPECIALIZATION</h1>
+    <br>
+    <div style="display: flex; justify-content: space-between;">
+        
+        <div style="margin: 0 10px;">
+          <p class = "p_first">Dermatologist</p>
+          <img src="derma.png" alt="Dermatologist" height = "80%" weight = "80%" >
+        </div>
+        <div style="margin: 0 10px;">
+          <p class = "p_first">Pediatrics</p>
+          <img src="pedra.png" alt="Pediatrics" height = "80%" weight = "80%" >
+        </div>
+        <div >
+          <p class = "p_first">Ophthalmologist</p>
+          <img src="optha.png" alt="Ophthalmologist" height = "80%" weight = "80%" >
+        </div>
+      </div>
+      
+
+    <h1>KEY MEDICAL PROFESSIONALS</h1>
+    <!-- <img src="doctor.jpeg" alt="This is doctor image" height="10%" width="10%"> -->
+    <ul>
+      <li>
+        <h4>Dr. P. Satya Sai Krishna MBBS,MS</h4>
+        <p>A famous cardiac surgeon of India. He has been as the head of Cardiology Council Of India</p>
+      </li>
+      <!-- Add more medical professionals as needed -->
+    </ul>
+    <br>
+    <h1>AWARDS AND RECOGNISION</h1>
+    <p>Our hospital Chairman Dr. G.L.Narayana was conferred with the prestigious 'YSR Lifetime Achievement' Award</p>
+  </section>
+
+  <hr>
+  <!-- Departments -->
+  <section id="departments">
+    <h1>DEPARTMENTS</h1>
+    <br>
+    <form>
+      <input type="text" placeholder="Search by department">
+      <button type="submit">Search</button>
+    </form>
+    <br>
+    <ul>
+      <li>
+        <h2>Cardiology</h2>
+        <p>We have the vast experience in the most complicated cornary artery bupass surgery</p>
+        <p  class = "second_1"><b>DEPARTMENT HEAD:</b> Ms. K Ruchitha</p>
+        <p class = "second_1"><b>CONTACT:</b> 7766554433</p>
+      </li>
+      <!-- Add more departments as needed -->
+    </ul>
+  </section>
+  <hr>
+  <!-- Services -->
+  <section id="services">
+    <h1>SERVICES</h1>
+    <br>
+    <ul>
+      <li>
+        <h2>Diagnostics</h2>
+        <p>A seperate division is allocated to undertake the pathology services.</p>
+      </li>
+      <li>
+        <h2>Surgeries</h2>
+        <p>A well trained group of surgens are present to perform the complicated surgeries.</p>
+      </li>
+      <li>
+        <h2>Emergency Care</h2>
+        <p>24/7 emergency services are provided with the best doctors of our hospital.</p>
+      </li>
+      <!-- Add more services as needed -->
+    </ul>
+  </section>
+  <hr>
+
+  <!-- Doctors and Staff -->
+  <section id="doctors">
+    <h1 >DOCTORS AND STAFF</h1>
+    <br>
+    <form>
+      <input type="text" placeholder="Search by name">
+      <input type="text" placeholder="Search by specialization">
+      <input type="text" placeholder="Search by department">
+      <button type="submit">Search</button>
+    </form>
+    <br>
+    <ul>
+      <li>
+        <h3>Dr. P.Satyasai Krishna  </h3>
+        <p class = "second_1">Qualifications: MD</p>
+        <p class = "second_1">Specialization: Cardiology</p>
+        <p class = "second_1">Experience: 25 years</p>
+        <p class = "second_1">Contact: 8977225526</p>
+      </li>
+      <!-- Add more doctors and staff profiles as needed -->
+    </ul>
+  </section>
+  <hr>
+  <!-- Patient Information and Support -->
+  <section id="patient-info">
+    <h1>PATIENT INFORMATION AND SUPPORT</h1>
+    <br>
+    <p class = "second_1"><b>Visiting Hours:</b> 7 PM - 9 PM</p>
+    <p class = "second_1"><b>Appointment Booking:</b> To book an appiontment contact the hospital tollfree number.</p>
+    <p class = "second_1"><b>Insurance Details:</b> To avail insurance please contact our agency.</p>
+    <h2>Resources</h2>
+    <ul>
+      <li>FAQs</li>
+      <li>Patient Guides</li>
+      <li>Support Services</li>
+      <!-- Add more resources as needed -->
+    </ul>
+  </section>
+
+  <hr>
+  <!-- Contact Us -->
+  <section id="contact">
+    <h1>CONTATCT US</h1>
+    <br>
+    <p class = "second_1"><b>Address:</b> PHN Hospital</p>
+    <p class = "second_1"><b>Phone:</b> 7778884422</p>
+    <p class = "second_1"><b>Email:</b> phnhospital234@gmail.com</p>
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
+</html>
